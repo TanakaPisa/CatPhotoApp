@@ -1,117 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-
-
+<head>
   <style>
-html{
-  font-size: 10px;
+
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height:1.4;
+        
+    }
+
+
+    h1{
+        font-weight: 400px;
+        line-height: 1.2;
+    }
+
+    p{
+        font-size: 1.2rem
+    }
+
+    h1, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  }
+
+
+
+    label{
+
+    }
+
+    input,button,select,textarea{
+
+    }
+
+    form{
+      padding: 2.5rem 0.625rem;
+      border-radius: 0.25rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .container{
+      width: 100%;
+      margin: 3.125rem auto 0 auto;
+    }
+
+    .form-group{
+      margin: 0 auto 1.25rem auto;
+      padding: 0.25rem;
+    }
+
+    .form-control{
+width: 100%;
+    }
+
+    .form-control:focus {
 }
 
-body{
-font-family: Arial, sans-serif;
-font-size: 1.6rem ;
-line-height: 1.5;
-text-align: center;
-margin: 0;
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
 }
 
-img {
-  width: 50%;
-  height: auto;
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
 }
 
-h1{
-  font-size: 4rem;
-  margin-bottom: 0;
-}
+  </style>
 
-h2{
-  font-size: 3.5rem;
-  margin-bottom: 1.2;
-}
-
-a{
-  color: #477ca7
-}
-
-a:visited{
-  color: #74638f
-}
-
-ul{
-max-width: 500px;
-margin: 0 auto 50px auto;
-text-align: left;
-}
-
-li{
-margin: 15px 0;
-}
-blockquote{
-  font-style: italic;
-  max-width: 600px;
-  margin: 0 auto 50px auto;
-  text-align: left;
-}
-#img-div{
-  background: white;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-#img-caption{
-margin: 20px 0 5px 0;
-}
-
-#tribute-info{
-
-}
-</style>
 </head>
 
-<body style="background-color: #b7bbc8;">
-  <main>
-  <h1 id="title">Dr. Norman Borlaug</h1>
-  <p>The man who saved a billion lives</p>
+<div class="container">
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
 
-  <div id="img-div">
-    <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="Dr. Norman Borlaug trains biologists in Mexico">
-    <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+<form id="survey-form">
+  <div class="form-group">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"  placeholder="Enter your name" class="form-control" required>
   </div>
 
-  <section id="tribute-info">
-  <h2>Here's a time line of Dr. Borlaug's life:</h2>
+  <div class="form-group">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your Email" class="form-control" required>
+  </div>
 
-  <ul>
-  <li><strong>1914</strong> - Born in Cresco, Iowa</li>
-  <li><strong>1933</strong> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
-  <li><strong>1935</strong> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
-  <li><strong>1937</strong> - Finishes university and takes a job in the US Forestry Service</li>
-  <li><strong>1938</strong> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li>
-  <li><strong>1941</strong> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li>
-  <li><strong>1942</strong> - Receives a Ph.D. in Genetics and Plant Pathology</li>
-  <li><strong>1944</strong> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li>
-  <li><strong>1945</strong> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
-  <li><strong>1953</strong> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li>
-  <li><strong>1962</strong> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li>
-  <li><strong>1970</strong> - receives the Nobel Peace Prize</li>
-  <li><strong>1983</strong> - helps seven African countries dramatically increase their maize and sorghum yields</li>
-  <li><strong>1984</strong> - becomes a distinguished professor at Texas A&M University</li>
-  <li><strong>2005</strong> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li>
-  <li><strong>2009</strong> - dies at the age of 95.</li>
-  </ul>
+  <div class="form-group">
+  <label for="name">Age (optional):</label>
+  <input type="number" id="age" name="age" min="10" max="99" placeholder="Age" class="form-control" >
+  </div>
 
-  <blockquote <blockquote cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm">
-      <p>
-        "Borlaug's life and achievement are testimony to the far-reaching
-        contribution that one man's towering intellect, persistence and
-        scientific vision can make to human peace and progress."
-      </p>
-      <cite>-- Indian Prime Minister Manmohan Singh</cite>
-  </blockquote>
+  <div class="form-group">
+  <label for="role">Which option best describes your current role?:</label>
+  <select id="dropdown" name="role" class="form-control">
+    <option disabled selected value>Select Current Role</option>
+    <option value="student">Student</option>
+    <option value="job">Full Time Learner</option>
+    <option value="learner">Full Time Learner</option>
+    <option value="preferno">Prefer not to say</option>
+  </select>
+  </div>
 
-  </h2>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" id="tribute-link">Wikipedia entry.</a></h2>
-  </section>
-  <body>
-  </html>
+  <div class="form-group">
+  <p>Would you recommend freeCodeCamp to a friend?</p>
+  <label for="definitely">Definitely</label>
+  <input type="radio"  id="definitely" name="user-recommend" value="definitely" class="form-control" checked>
+  <label for="maybe">Maybe</label>
+  <input type="radio"  id="maybe" name="user-recommend" value="maybe" class="form-control">
+  <label for="not-sure">Not sure</label>
+  <input type="radio"  id="not-sure" name="user-recommend" value="not-sure" class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
+  <select id="dropdown" name="role" class="form-control">
+    <option disabled selected value>Select an option</option>
+    <option value="challenge">Challenges</option>
+    <option value="project">Projects</option>
+    <option value="community">Community</option>
+    <option value="open-source">Open source</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <p>What would you like to see improved? (Check all that apply)</p>
+  <label for="front-end-projects">Front-end Projects</label>
+  <input type="checkbox"  id="front-end-projects" name="front-end-projects" value="front-end-projects" class="form-control">
+  <label for="back-end">Back-end Projects</label>
+  <input type="checkbox"  id="back-end-projects" name="back-end-projects" value="back-end-projects" class="form-control">
+  <label for="data-visualization">Data Visualization</label>
+  <input type="checkbox"  id="data-visualization" name="data-visualization" value="data-visualization" class="form-control">
+  <label for="challenges">Challenges</label>
+  <input type="checkbox"  id="challenges" name="challenges" value="challenges" class="form-control">
+  <label for="open-source-community">Open Source Community</label>
+  <input type="checkbox"  id="open-source-community" name="open-source-community" value="open-source-community" class="form-control">
+  <label for="gitter-help-rooms">Gitter help rooms</label>
+  <input type="checkbox"  id="gitter-help-rooms" name="gitter-help-rooms" value="gitter-help-rooms" class="form-control">
+  <label for="videos">Videos</label>
+  <input type="checkbox"  id="videos" name="videos" value="videos" class="form-control">
+  <label for="city-meetup">City Meetups</label>
+  <input type="checkbox"  id="city-meetup" name="city-meetup" value="city-meetup" class="form-control">
+  <label for="wiki">Wiki</label>
+  <input type="checkbox"  id="wiki" name="wiki" value="wiki" class="form-control">
+  <label for="forum">Forum</label>
+  <input type="checkbox"  id="forum" name="forum" value="forum" class="form-control">
+  <label for="additional-courses">Additional Courses</label>
+  <input type="checkbox"  id="additional-courses" name="additional-courses" value="additional-courses" class="form-control">
+</div>
+
+<div class="form-group">
+  <p>Any comments or suggestions?</p>
+  <textarea id="comments" name="comments"></textarea>
+</div>
+
+  <button type="submit" id="submit">Submit</button>
+
+</form>
+</body>
+</div>
