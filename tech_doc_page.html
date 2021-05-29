@@ -1,27 +1,135 @@
 <head>
+<style>
+html, body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
 
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#JS_doc {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  top: 0;
+  bottom:0;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+</style>
 </head>
 <body>
- <nav id="navbar">
-    <header>JS Documentation</header>
-     <ul>
-         <li href="#Introduction">Introduction</li>
-         <li href="#What_you_should_already_know">What you should already know</li>
-         <li href="#JavaScript_and_Java">JavaScript and Java</li>
-         <li href="#Hello_world">Hello world</li>
-         <li href="#Variables">Variables</li>
-         <li href="#Declaring variables">Declaring variables</li>
-         <li href="#Variable scope">Variable scope</li>
-         <li href="#Global variables">Global variables</li>
-         <li href="#Constants">Constants</li>
-         <li href="#Data_types">Data types</li>
-         <li href="#if...else statement">if...else statement</li>
-         <li href="#while statement">while statement</li>
-         <li href="#Function declarations">Function declarations</li>
-         <li href="#Reference">Reference</li>
-     </ul>
-
     <main id="main-doc">
+        <nav id="navbar">
+            <header>JS Documentation</header>
+            <ul>
+              <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+              <li>
+                <a class="nav-link" href="#What_you_should_already_know"
+                  >What you should already know</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+              </li>
+              <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+              <li><a class="nav-link" href="#Variables">Variables</a></li>
+              <li>
+                <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+              </li>
+              <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+              <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+              <li><a class="nav-link" href="#Constants">Constants</a></li>
+              <li><a class="nav-link" href="#Data_types">Data types</a></li>
+              <li>
+                <a class="nav-link" href="#if...else_statement">if...else statement</a>
+              </li>
+              <li><a class="nav-link" href="#while_statement">while statement</a></li>
+              <li>
+                <a class="nav-link" href="#Function_declarations"
+                  >Function declarations</a
+                >
+              </li>
+              <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+          </nav>
     <section class="main-section" id="Introduction">
     <header>Introduction</header>
     <article>
@@ -150,7 +258,7 @@
     
     <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
     </section>
-    </main>
+    
 
     <section class="main-section" id="Data types">
     <header>Data types</header>
@@ -241,4 +349,5 @@
         <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
     </ul>
     </section>
+    </main>
 </body>
