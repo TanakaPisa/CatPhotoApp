@@ -1,0 +1,9 @@
+function countOnline(usersObj) {
+  // Only change code below this line
+  let online_count = 0;
+  for(const i in usersObj){
+  if(usersObj[i].online===true){online_count++;}
+  }
+  return online_count;
+  // Only change code above this line
+}
