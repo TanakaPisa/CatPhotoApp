@@ -1,0 +1,14 @@
+function reverseString(str) {
+  const arr = [];
+  let reverse_str = ""
+  for(let i in str){
+    arr.unshift(str[i]);
+  }
+
+  for(let i in arr){
+    reverse_str += arr[i]
+  }
+  return reverse_str;
+}
+
+console.log(reverseString("hello"));
