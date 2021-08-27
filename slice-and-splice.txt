@@ -1,0 +1,8 @@
+function frankenSplice(arr1, arr2, n) {
+  const start = arr2.slice(0,n);
+  const end = arr2.slice(n, arr2.length);
+  const new_arr = [...start,...arr1,...end];
+  return new_arr;
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
