@@ -1,0 +1,21 @@
+function bouncer(arr) {
+  let new_arr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == false | arr[i] == null | arr[i] == '' | arr[i] == undefined | arr[i] !== arr[i]) {
+      new_arr.push(i);
+    }
+  }
+  if (new_arr.length == arr.length-1) {
+    return []
+  }
+  else {
+    let removed = 0;
+    for (let j = 0; j < new_arr.length; j++) {
+      arr.splice(new_arr[j]+removed, 1);
+      removed--;
+    }
+  }
+  return arr;
+}
+
+console.log(bouncer([null, NaN, 1, 2, undefined]));
